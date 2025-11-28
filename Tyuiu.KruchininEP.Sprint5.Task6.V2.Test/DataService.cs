@@ -8,7 +8,7 @@ namespace Tyuiu.KruchininEP.Sprint5.Task6.V2.Test
         [TestMethod]
         public void ValidLoadFromDataFile()
         {
-            string path = @"C:\Users\HASEE\source\repos\Tyuiu.KruchininEP.Sprint5\Tyuiu.KruchininEP.Sprint5.Task6.V2\bin\Debug\net8.0\OutPutFileTask6.txt";
+            string path = @"C:\Users\HASEE\Desktop\ТИУ\DataSprint5\InPutDataFileTask6V2.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExist = fileInfo.Exists;
             bool wait = true;
@@ -20,7 +20,7 @@ namespace Tyuiu.KruchininEP.Sprint5.Task6.V2.Test
         public void ValidCalc()
         {
             DataService ds = new DataService();
-            string path = @"C:\Users\HASEE\source\repos\Tyuiu.KruchininEP.Sprint5\Tyuiu.KruchininEP.Sprint5.Task6.V2\bin\Debug\net8.0\OutPutFileTask6.txt";
+            string path = @"C:\Users\HASEE\Desktop\ТИУ\DataSprint5\InPutDataFileTask6V2.txt";
             var res = ds.LoadFromDataFile(path);
             int wait = 0;
 
