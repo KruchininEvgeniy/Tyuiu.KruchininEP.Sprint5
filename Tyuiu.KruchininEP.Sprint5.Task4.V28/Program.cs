@@ -27,7 +27,7 @@ namespace Tyuiu.KruchininEP.Sprint5.Task4.V28
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = $@"C:\Users\HASEE\source\repos\Tyuiu.KruchininEP.Sprint5\Tyuiu.KruchininEP.Sprint5.Task4.V28\bin\Debug\net8.0\OutPutFileTask4.txt";
+            string path = $@"C:\Users\HASEE\Desktop\ТИУ\DataSprint5\InPutDataFileTask4V28.txt";
 
             Console.WriteLine($"Данные находятся в файле: {path}");
 
