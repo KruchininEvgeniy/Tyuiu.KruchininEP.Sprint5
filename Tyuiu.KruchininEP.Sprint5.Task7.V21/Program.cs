@@ -1,38 +1,38 @@
-﻿using System.IO;
-using Tyuiu.KruchininEP.Sprint5.Task3.V24.Lib;
-namespace Tyuiu.KruchininEP.Sprint5.Task3.V24
+﻿using Tyuiu.KruchininEP.Sprint5.Task7.V21.Lib;
+namespace Tyuiu.KruchininEP.Sprint5.Task7.V21
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            Console.Title = ("Спринт #5 | Выполнил: Кручинин Е. П. | РППб25-1");
+
+            Console.Title = "Спринт #5 | Выполнила: Кручинин Е. П. | РППб25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Потоковый метод записи данных в бинарный файл                     *");
-            Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #24                                                             *");
-            Console.WriteLine("* Выполнил: Кручинин Е. П. | РППб25-1                   *");
+            Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #21                                                             *");
+            Console.WriteLine("* Выполнила: Кручинин Е. П. | РППб25-1                                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дано выражение , вычислить его значение при x = 3, результат сохранить  *");
-            Console.WriteLine("* в бинарный файл OutPutFileTask3.bin и вывести на консоль. Округлить до  *");
-            Console.WriteLine("* трёх знаков после запятой.                                              *");
+            Console.WriteLine("* Удалить все знаки препинания из файла. Результат сохранить в файл.      *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 3;
-            Console.WriteLine("x = " + x);
+            string pathin = @"C:\Users\HASEE\Desktop\ТИУ\DataSprint5\InPutDataFileTask7V21.txt";
+            Console.WriteLine("Данные находятся в файле: " + pathin);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            string res = ds.SaveToFileTextData(x);
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine("Находится в файле: ");
+            string pathout = ds.LoadDataAndSave(pathin);
+
+            Console.WriteLine(pathout);
+
             Console.ReadKey();
         }
     }

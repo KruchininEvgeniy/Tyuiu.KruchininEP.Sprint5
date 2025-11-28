@@ -14,7 +14,7 @@ namespace Tyuiu.KruchininEP.Sprint5.Task6.V2
             Console.WriteLine("# Тема: Обработка текстовых файлов                                        #");
             Console.WriteLine("# Задание #6                                                              #");
             Console.WriteLine("# Вариант #2                                                              #");
-            Console.WriteLine("# Выполнил Рауш Кирилл Николавевич | АСОиУб-24-1                          #");
+            Console.WriteLine("# Выполнил Кручинин Е. П. | РППб25-1                                      #");
             Console.WriteLine("###########################################################################");
             Console.WriteLine("# УСЛОВИЕ:                                                                #");
             Console.WriteLine(@"# Дан файл С:\DataSprint5\InPutDataFileTask6V2.txt (файл взять из        #");

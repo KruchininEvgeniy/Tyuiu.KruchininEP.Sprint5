@@ -13,10 +13,10 @@ namespace Tyuiu.KruchininEP.Sprint5.Task4.V28
             Console.WriteLine("* Тема: Чтение данных из текстового файла                                 *");
             Console.WriteLine("* Задание #4                                                              *");
             Console.WriteLine("* Вариант #28                                                             *");
-            Console.WriteLine("* Выполнил: Абрамушкин Александр Николаевич | ИИПб-24-2                   *");
+            Console.WriteLine("* Выполнил: Кручинин Е. П. | РППб25-1                                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан файл С:\\DataSprint5\\InPutDataFileTask4V0.txt в котором есть         *");
+            Console.WriteLine("* Дан файл С:\\DataSprint5\\InPutDataFileTask4V0.txt в котором есть       *");
             Console.WriteLine("* вещественное значение. Прочитать значение из файла и подставить вместо  *");
             Console.WriteLine("*                   3x^3                                                  *");
             Console.WriteLine("* Х в формуле  y = ------. Вычислить значение по формуле  и вернуть       *");
