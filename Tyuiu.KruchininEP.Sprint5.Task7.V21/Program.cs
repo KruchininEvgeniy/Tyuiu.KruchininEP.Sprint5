@@ -1,4 +1,5 @@
-﻿using Tyuiu.KruchininEP.Sprint5.Task7.V21.Lib;
+﻿using System.Diagnostics;
+using Tyuiu.KruchininEP.Sprint5.Task7.V21.Lib;
 namespace Tyuiu.KruchininEP.Sprint5.Task7.V21
 {
     internal class Program
@@ -22,16 +23,17 @@ namespace Tyuiu.KruchininEP.Sprint5.Task7.V21
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string pathin = @"C:\Users\HASEE\Desktop\ТИУ\DataSprint5\InPutDataFileTask7V21.txt";
-            Console.WriteLine("Данные находятся в файле: " + pathin);
+            string path = @"C:\Users\HASEE\Desktop\ТИУ\DataSprint5\InPutDataFileTask7V21.txt";
+            string pathSaveFile = @"C:\Users\HASEE\source\repos\Tyuiu.KruchininEP.Sprint5\Tyuiu.KruchininEP.Sprint5.Task7.V21\bin\Debug\net8.0\OutPutFileTask7.txt";
+            Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("Находится в файле: ");
-            string pathout = ds.LoadDataAndSave(pathin);
+            pathSaveFile = ds.LoadDataAndSave(path);
 
-            Console.WriteLine(pathout);
+            Console.WriteLine(pathSaveFile);
 
             Console.ReadKey();
         }

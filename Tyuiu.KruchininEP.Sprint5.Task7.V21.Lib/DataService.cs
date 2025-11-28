@@ -4,18 +4,18 @@ namespace Tyuiu.KruchininEP.Sprint5.Task7.V21.Lib
 {
     public class DataService : ISprint5Task7V21
     {
-        public string LoadDataAndSave(string path)
+        public string LoadDataAndSave(string path) 
         {
-            string savepath = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V21.txt");
+            string pathSaveFile = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V21.txt");
 
-            FileInfo fileinfo = new FileInfo(savepath);
+            FileInfo fileinfo = new FileInfo(pathSaveFile);
             bool fileexist = fileinfo.Exists;
             if (fileexist)
             {
-                File.Delete(savepath);
+                File.Delete(pathSaveFile);
             }
 
-            string sline = "";
+            string strline = "";
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
@@ -25,14 +25,14 @@ namespace Tyuiu.KruchininEP.Sprint5.Task7.V21.Lib
                     {
                         if ((line[i] != '.') && (line[i] != ',') && (line[i] != '!') && (line[i] != '?') && (line[i] != '-'))
                         {
-                            sline += line[i];
+                            strline += line[i];
                         }
                     }
-                    File.AppendAllText(savepath, sline + Environment.NewLine);
-                    sline = "";
+                    File.AppendAllText(pathSaveFile, strline + Environment.NewLine);
+                    strline = "";
                 }
             }
-            return savepath;
+            return pathSaveFile;
         }
     }
 }
