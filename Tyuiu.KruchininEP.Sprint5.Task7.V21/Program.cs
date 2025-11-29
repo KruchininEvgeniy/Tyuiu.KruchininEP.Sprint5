@@ -25,17 +25,14 @@ namespace Tyuiu.KruchininEP.Sprint5.Task7.V21
             Console.WriteLine("***************************************************************************");
 
             string path = @"C:\Users\HASEE\source\repos\Tyuiu.KruchininEP.Sprint5\Tyuiu.KruchininEP.Sprint5.Task7.V21\bin\Debug\net8.0\InPutDataFileTask7V21.txt";
-            string pathSaveFile = @"C:\Users\HASEE\source\repos\Tyuiu.KruchininEP.Sprint5\Tyuiu.KruchininEP.Sprint5.Task7.V21\bin\Debug\net8.0\OutPutFileTask7.txt";
             Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("Находится в файле: ");
-            pathSaveFile = ds.LoadDataAndSave(path);
-
+            string pathSaveFile = ds.LoadDataAndSave(path);
             Console.WriteLine(pathSaveFile);
-
             Console.ReadKey();
         }
     }

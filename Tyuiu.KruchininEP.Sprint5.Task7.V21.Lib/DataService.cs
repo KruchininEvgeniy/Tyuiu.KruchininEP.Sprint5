@@ -7,7 +7,7 @@ namespace Tyuiu.KruchininEP.Sprint5.Task7.V21.Lib
     {
         public string LoadDataAndSave(string path) 
         {
-            string pathSaveFile = @"C:\Users\HASEE\source\repos\Tyuiu.KruchininEP.Sprint5\Tyuiu.KruchininEP.Sprint5.Task7.V21\bin\Debug\net8.0\OutPutDataFileTask7V21.txt";
+            string pathSaveFile = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V21.txt");
 
             FileInfo fileinfo = new FileInfo(pathSaveFile);
             bool fileexist = fileinfo.Exists;
